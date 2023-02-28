@@ -11,3 +11,4 @@ aws s3 sync s3://foldername .
 
 
 rsync -avh /var/lib/jenkins/workspace/demo1-project/*.html  root@172.31.42.53:/opt/index.html
+in git hub
