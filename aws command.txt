@@ -1,0 +1,13 @@
+AWSAccessKeyId=AKIARXXKLPTJ3AEN7KFS
+AWSSecretKey=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
+
+
+                                  AWS syschronized command
+aws s3 sync . s3://foldername
+
+after deletion folder files you can type
+aws s3 sync s3://foldername .
+
+
+
+rsync -avh /var/lib/jenkins/workspace/demo1-project/*.html  root@172.31.42.53:/opt/index.html

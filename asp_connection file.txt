@@ -1,0 +1,37 @@
+<connectionStrings>
+    <add name="DBCS" connectionString="data source=DESKTOP-VCQ6SIF\SQLEXPRESS;initial catalog=naveendb;integrated security=true" />
+<connectionString>
+
+
+
+
+
+
+CREATE PROC UserAddrEdit
+@UserID int,
+@FirstName varchar(50),
+@LastName varchar(50),
+@Contact varchar(50),
+@Gender varchar(50),
+@Address varchar(50),
+@UserName varchar(50),
+@Password varchar(50),
+IF @UserID=0
+ BEGIN
+     INSERT INTO UserRegistration (FirstName,LastName,Contact,Gender,Address,UserName,Password)
+	 VALUES (@FirstName,@LastName,@Contact,@Gender,@Address,@UserName,@Password)
+  END
+  ELSE
+  BEGIN
+  UPDATE UserRegistration
+  SET
+     FirstName=@FirstName
+	 LastName=@LastName
+	 Contact=@Contact
+	 Gender=@Gender
+	 Address=@Address
+	 UserName=@UserName
+	 Password=@Password
+	 WHERE userid=
+
+  END
